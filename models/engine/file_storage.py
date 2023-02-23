@@ -8,7 +8,7 @@ class FileStorage():
     """Class that serializes and deserializes"""
     __file_path = "file.json"
     __objects = {}
-    
+
     def all(self):
         """Returns dictionary with all objects atributes"""
         return self.__objects
@@ -21,12 +21,14 @@ class FileStorage():
     def save(self):
         """Serializes __objects to JSON file"""
         with open(self.__file_path, "w", encoding='utf-8') as file:
-            json.dump({k: v.to_dict() for k, v in self.__objects.items()}, file)
+            (json.dump({k: v.to_dict()
+             for k, v in self.__objects.items()}, file))
 
     def reload(self):
         """Deserializes the JSON file to __objects"""
         try:
             with open(self.__file_path, "r", encoding='utf-8') as file:
-                self.__objects = {k: BaseModel(**v) for k, v in json.load(file).items()}
+                self.__objects = ({k: BaseModel(**v)
+                                  for k, v in json.load(file).items()})
         except Exception:
             pass
