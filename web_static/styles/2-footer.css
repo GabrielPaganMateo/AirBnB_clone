@@ -6,6 +6,9 @@ footer {
     bottom: 0;
 }
 footer p {
-    vertical-align: center;
-    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
