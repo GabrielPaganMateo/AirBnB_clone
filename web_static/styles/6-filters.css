@@ -1,0 +1,133 @@
+.filters {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: #DDDDDD;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filters button {
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    height: 48px;
+    width: 20%;
+    border: none;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: 3%;
+    
+}
+
+.filters button:hover {
+    opacity: 90%;
+}
+
+.filters .locations {
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid;
+    border-color: #DDDDDD;
+}
+
+.filters .amenities {
+    height: 100%;
+    width: 25%;
+}
+
+.filters .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters h3 {
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+.filters h4 {
+    margin: 0 0 12px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.filters h4,
+.filters h3 {
+    margin-left: 20%;
+    min-width: 150px;
+}
+
+.popover ul {
+    list-style-type: none;
+}
+
+.popover h2 {
+    margin-bottom: 0;
+}
+
+.locations .popover ul li:first-of-type{
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.locations .popover ul li:last-of-type {
+    margin-top: 0;
+    margin-bottom: 3em;
+}
+
+.popover .locations li:last-of-type{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.locations .popover li {
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 1.5em;
+}
+
+.locations .popover ul {
+   line-height: 1.5em;
+}
+
+.amenities .popover li:first-of-type {
+    margin-top: 2em;
+}
+
+.amenities .popover li:last-of-type {
+    margin-bottom: 2em;
+}
+
+.amenities .popover ul {
+    line-height: 2em;
+}
+
+.popover {
+    background-color: rgb(248, 248, 248);
+}
+
+.locations .popover {
+    display: none;
+    position: relative;
+    width: 100%;
+    border: 1px solid;
+    border-color: #DDDDDD;
+    border-radius: 4px;
+}
+
+.amenities .popover {
+    display: none;
+    position: relative;
+    width: 100%;
+    border: 1px solid;
+    border-color: #DDDDDD;
+    border-radius: 4px;
+}
+
+.locations:hover .popover, .amenities:hover .popover {
+    display: block;
+}
