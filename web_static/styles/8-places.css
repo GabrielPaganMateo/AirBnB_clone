@@ -102,6 +102,11 @@ article h3 {
     margin-right: 50px;
 }
 
-.price_by_night .price_by_night_suite {
-    font-size: 25px;
+.Asuite .price_by_night {
+    width: 70px;
+    height: 70px;
+}
+
+.Asuite h3 {
+    margin-left: 100px;
 }
