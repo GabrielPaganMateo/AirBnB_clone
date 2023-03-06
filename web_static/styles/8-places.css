@@ -1,7 +1,7 @@
 .places {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
     column-gap: 35px;
     position: absolute;
     top: 125px;
@@ -14,7 +14,7 @@
     font-size: 30px;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    margin-bottom: 0;
+    margin-bottom: 15px;
     padding-bottom: 0;
     margin-left: 1em;
 }
@@ -28,10 +28,10 @@
     border-color: #ff5a5f;
     font-size: 25px;
     margin: auto;
-    padding: auto;
+    padding: 20px;
     display: grid;
-    grid-template-columns: auto, 100px;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
 }
 
 .Tinyhouse {
@@ -43,9 +43,10 @@
     border-color: #ff5a5f;
     font-size: 25px;
     margin: auto;
-    padding: 0;
+    padding: 20px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
     justify-self: start;
 }
 
@@ -58,16 +59,41 @@
     border-color: #ff5a5f;
     font-size: 25px;
     margin: auto;
-    margin-top: 25px;
+    padding: 20px;
+    margin-top: 40px;
     display: grid;
     justify-self: center;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
 }
 
 
-article h3 {
+
+.Myhome h3 {
+    margin: auto;
+    margin-left: 125px;
+    margin-bottom: 35px;
+    font-size: 30px;
+    grid-column: 1 / 3;
+    grid-row: 1;
     justify-self: end;
-    align-self: start;
-    margin-left: 50px;
+}
+
+.Tinyhouse h3 {
+    margin: auto;
+    margin-left: 115px;
+    margin-bottom: 35px;
+    font-size: 30px;
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.Asuite h3 {
+    margin: auto;
+    margin-bottom: 35px;
+    font-size: 30px;
+    grid-column: 1 / 4;
+    grid-row: 1;
 }
 
 .Myhome, .Tinyhouse,
@@ -85,12 +111,15 @@ article h3 {
     width: 60px;
     height: 60px;
     font-size: 30px;
-    grid-column: 2 / 3;
+    grid-row: 1;
+    grid-column: 3 / 4;
     justify-self: end;
     align-self: center;
     display: grid;
-    align-items: center;
-    margin-right: 20px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+
 }
 
 .price_by_night p {
@@ -98,15 +127,64 @@ article h3 {
     padding: auto;
 }
 
-.Tinyhouse h3 {
-    margin-right: 50px;
-}
+
 
 .Asuite .price_by_night {
     width: 70px;
     height: 70px;
 }
 
-.Asuite h3 {
-    margin-left: 100px;
+.information {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    height: 80px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #DDDDDD;
+    display: grid;
+    grid-template-columns: 130px, 130px, 130px;
+    grid-template-rows: auto, auto, auto, auto;
+}
+
+.max_guest {
+    grid-column: 1 / 2;
+    justify-self: end;
+}
+
+.number_rooms {
+    grid-column: 2 / 3;
+    justify-self: center;
+
+}
+
+.number_bathrooms {
+    grid-column: 3 / 4;
+    justify-self: start;
+}
+
+.Guests {
+    grid-column: 1 / 2;
+    margin: 0;
+    justify-self: end;
+    font-size: 16px;
+}
+
+.Bedrooms {
+    grid-column: 2 / 3;
+    justify-self: center;
+    margin: 0;
+    font-size: 16px;
+}
+
+.Bathrooms {
+    grid-column: 3 / 4;
+    justify-self: start;
+    margin: 0;
+    font-size: 16px;
+}
+
+.User {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    font-size: 16px;
 }
